@@ -4,7 +4,6 @@ import { ContactPage } from '../../pages/contact/contact';
 import { HomePage } from '../../pages/home/home';
 import { Testpage1Page } from '../../pages/testpage1/testpage1';
 import { Testpage2Page } from '../../pages/testpage2/testpage2';
-import { TabsPage } from '../../pages/tabs/tabs';
 
 /*
   Generated class for the TabswitcherProvider provider.
