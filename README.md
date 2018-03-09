@@ -158,7 +158,7 @@ Create your Buttons to acces the methods.
 
 ## So what are we even doing here ?
 
-Simple. When you press as example: **SwitchTabs** button you are accesing the method **switchTabsDefaultAbout()** this method is coded to acces the Providers method and will execute **switchTabsDefault()**. 
+Simple. When you press as example: **SwitchTabsDefault** button you are accesing the method **switchTabsDefaultAbout()** this method is coded to acces the Providers method and will execute **switchTabsDefault()**. 
 *What* **switchTabsDefault()** *is doing is very basic:*
 It toggles the first tabbar to *none* and the second tabbar to *flex* results in removing the first tabview and displaying the second one.
 
