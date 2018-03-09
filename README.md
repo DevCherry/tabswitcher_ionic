@@ -6,7 +6,7 @@ To test this out clone the repository and do `npm install` and `ionic serve`.
 ## How it works and what I did to achieve it:
 
 Start by creating a default application **tabs**.
-Then create a provider `ionic generate yourProviderName provider` in my case **tabswitcher**. 
+Then create a provider `ionic generate provider yourProviderName` in my case **tabswitcher**. 
 
 *Why is the provider needed ?* We want to acces the **Tabbar** from **any Page** we can do that with a Provider.
 
