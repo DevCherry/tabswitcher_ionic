@@ -1,10 +1,4 @@
-# Simple 
-
-
-
-
-
-er for Ionic
+# Simple Tabswitcher for Ionic
 
 To test this out clone the repository and do `npm install` and `ionic serve`.
 
