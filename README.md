@@ -162,5 +162,52 @@ Simple. When you press as example: **SwitchTabs** button you are accesing the me
 *What* **switchTabs()** *is doing is very basic:*
 It toggles the first tabbar to *none* and the second tabbar to *flex* results in removing the first tabview and displaying the second one.
 
+## Very Important!
 
-##### Feel free to use and modify this code to your desire!
+If you **only** want to change the **text** or **icon** of a certain button you don't have to create a "second" tabbar in HTML!
+
+*Just create a method in your Provider as example:*
+
+```
+onlySwitchIconText(){
+  this.tab1icon = "alarm";
+  this.tab1text = "New Home";
+}
+```
+
+***You might ask yourself now why didn't I do that with tabRoot ?***
+
+The problem here is, it does work with a little workout yes! But there is an issue. The First tabPage won't unload so you have to press the new Tabbutton twice. ***(If someone has a solution for this id love to hear it!)***
+
+What you have todo to achieve this example: 
+
+**Change in your Provider**
+```
+  tab1Root: any;
+  tab2Root: any;
+  tab3Root: any;
+  tab4Root: any;
+  tab5Root: any;
+  tab6Root: any;
+ ```
+Initialize the tabs.
+```
+  constructor() {
+  tab1Root = HomePage;
+  tab2Root = AboutPage;
+  tab3Root = ContactPage;
+  tab4Root = Testpage1Page;
+  tab5Root = AboutPage;
+  tab6Root = Testpage2Page;
+  }
+```
+
+Create a method
+```
+switchTabsVar(){
+  this.tab1Root = Testpage1Page;
+}
+```
+
+
+**Feel free to use and modify this code to your desire!**
