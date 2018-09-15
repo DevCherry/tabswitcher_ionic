@@ -1,11 +1,7 @@
-<ion-tabs id="tabswitcherProvider.switchedTabsDefault" style="display:flex">
-  <ion-tab [root]="tabswitcherProvider.tab1Root" tabTitle="{{tabswitcherProvider.tab1text}}" tabIcon="{{tabswitcherProvider.tab1icon}}"></ion-tab>
-  <ion-tab [root]="tabswitcherProvider.tab2Root" tabTitle="{{tabswitcherProvider.tab2text}}" tabIcon="{{tabswitcherProvider.tab2icon}}"></ion-tab>
-  <ion-tab [root]="tabswitcherProvider.tab3Root" tabTitle="{{tabswitcherProvider.tab3text}}" tabIcon="{{tabswitcherProvider.tab3icon}}"></ion-tab>
-</ion-tabs>
-
-<ion-tabs id="tabswitcherProvider.switchedTabs" style="display:none">
-  <ion-tab [root]="tabswitcherProvider.tab4Root" tabTitle="{{tabswitcherProvider.tab4text}}" tabIcon="{{tabswitcherProvider.tab4icon}}"></ion-tab>
-  <ion-tab [root]="tabswitcherProvider.tab5Root" tabTitle="{{tabswitcherProvider.tab5text}}" tabIcon="{{tabswitcherProvider.tab5icon}}"></ion-tab>
-  <ion-tab [root]="tabswitcherProvider.tab6Root" tabTitle="{{tabswitcherProvider.tab6text}}" tabIcon="{{tabswitcherProvider.tab6icon}}"></ion-tab>
+<ion-tabs>
+	<ion-tab [show]="tabswitcherProvider.tab1" [root]="tab1Root" tabTitle="{{tabswitcherProvider.tab1text}}" tabIcon="{{tabswitcherProvider.tab1icon}}"></ion-tab>
+	<ion-tab [show]="tabswitcherProvider.tab2" [root]="tab2Root" tabTitle="{{tabswitcherProvider.tab2text}}" tabIcon="{{tabswitcherProvider.tab2icon}}"></ion-tab>
+	<ion-tab [show]="tabswitcherProvider.tab3" [root]="tab3Root" tabTitle="{{tabswitcherProvider.tab3text}}" tabIcon="{{tabswitcherProvider.tab3icon}}"></ion-tab>
+	<ion-tab [show]="tabswitcherProvider.tab4" [root]="tab4Root" tabTitle="{{tabswitcherProvider.tab4text}}" tabIcon="{{tabswitcherProvider.tab4icon}}"></ion-tab>
+	<ion-tab [show]="tabswitcherProvider.tab6" [root]="tab6Root" tabTitle="{{tabswitcherProvider.tab6text}}" tabIcon="{{tabswitcherProvider.tab6icon}}"></ion-tab>
 </ion-tabs>

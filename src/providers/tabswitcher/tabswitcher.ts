@@ -1,52 +1,47 @@
 import { Injectable } from '@angular/core';
-import { AboutPage } from '../../pages/about/about';
-import { ContactPage } from '../../pages/contact/contact';
-import { HomePage } from '../../pages/home/home';
-import { Testpage1Page } from '../../pages/testpage1/testpage1';
-import { Testpage2Page } from '../../pages/testpage2/testpage2';
 
-/*
-  Generated class for the TabswitcherProvider provider.
 
-  See https://angular.io/guide/dependency-injection for more info on providers
-  and Angular DI.
-*/
 
 @Injectable()
 export class TabswitcherProvider {
 
-  tab1Root = HomePage;
-  tab2Root = AboutPage;
-  tab3Root = ContactPage;
-  tab4Root = Testpage1Page;
-  tab5Root = AboutPage;
-  tab6Root = Testpage2Page;
-
+//Set the Tab-ICON
   tab1icon = "home";
   tab2icon = "information-circle";
   tab3icon = "contacts";
   tab4icon = "analytics";
-  tab5icon = "information-circle";
   tab6icon = "alarm";
 
+//Set the Tab-TEXT
   tab1text = "Home";
   tab2text = "Tabswitch";
   tab3text = "Contact";
   tab4text = "TestPage1";
-  tab5text = "Tabswitch";
   tab6text = "TestPage2";
+
+  //Init default shown and hidden tabs
+  tab1 = true;
+  tab2 = true;
+  tab3 = true;
+
+  tab4 = false;
+  tab6 = false;
 
   constructor() {
   }
 
   switchTabs() {
-    document.getElementById('tabswitcherProvider.switchedTabs').style.display = 'none';
-    document.getElementById('tabswitcherProvider.switchedTabsDefault').style.display = 'flex';
+	this.tab1 = false;
+	this.tab3 = false;
+	this.tab4 = true;
+	this.tab6 = true;
   }
 
   switchTabsDefault() {
-    document.getElementById('tabswitcherProvider.switchedTabsDefault').style.display = 'none';
-    document.getElementById('tabswitcherProvider.switchedTabs').style.display = 'flex';
+	  this.tab1 = true;
+	  this.tab3 = true;
+	  this.tab4 = false;
+	  this.tab6 = false;
   }
 
 }

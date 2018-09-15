@@ -16,8 +16,15 @@ export class TabsPage {
   tab2Root = AboutPage;
   tab3Root = ContactPage;
   tab4Root = Testpage1Page;
-  tab5Root = AboutPage;
   tab6Root = Testpage2Page;
+
+  //Init default shown and hidden tabs
+  tab1 = true;
+  tab2 = true;
+  tab3 = true;
+
+  tab4 = false;
+  tab6 = false;
 
   constructor(private tabswitcherProvider: TabswitcherProvider) {
   }
