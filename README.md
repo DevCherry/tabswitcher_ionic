@@ -123,6 +123,7 @@ constructor(private tabswitcherProvider: TabswitcherProvider)
 </ion-tabs>
 ```
 *Why am I using* ***tabswitcherProvider.*** *infront of the values ?* This is how you can acces the Provider in HTML!
+*Note `[show]` can be used with true or false.*
 
 
 ## Todo where you want to switch the Tabs (in my case "AboutPage"):
@@ -160,7 +161,7 @@ Simple. When you press as example: **SwitchTabs** button you are accesing the me
 *What* **switchTabs()** does is very basic:*
 It will change the value as example from **tab1** + **tab3** to **false** while it changes the value from **tab4** + **tab6** to **true**.
 
-## Very Important!
+## Important!
 
 If you **only** want to change the **text** or **icon** of a certain button you can do it like this:
 
