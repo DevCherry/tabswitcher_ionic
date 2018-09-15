@@ -42,8 +42,6 @@ public http: HttpClient
   tab4 = false;
   tab6 = false;
 ```
-**Explanation for tabicon and tabtext:**
-*I like to initialize the Names and Icons in the Typescript file, you can also hardcode them into the **HTML** if you prefer that!*
 
 *Create the methods*
 ```
@@ -61,6 +59,9 @@ public http: HttpClient
 	  this.tab6 = false;
   }
 ```
+
+**Explanation for tabicon and tabtext:**
+*I like to initialize the Names and Icons in the Typescript file, you can also hardcode them into the **HTML** if you prefer that!*
 
 
 ## Todo in Tabs:
@@ -155,8 +156,8 @@ Create your Buttons to acces the methods.
 
 ## So what are we even doing here ?
 
-Simple. When you press as example: **SwitchTabsDefault** button you are accesing the method **switchTabsDefaultAbout()** this method is coded to acces the Providers method and will execute **switchTabsDefault()**. 
-*What* **switchTabs()** *is doing is very basic:*
+Simple. When you press as example: **SwitchTabs** button you are accesing the method **switchTabsABOUT()** this method is coded to acces the Providers method and will execute **switchTabs()**. 
+*What* **switchTabs()** does is very basic:*
 It will change the value as example from **tab1** + **tab3** to **false** while it changes the value from **tab4** + **tab6** to **true**.
 
 ## Very Important!
